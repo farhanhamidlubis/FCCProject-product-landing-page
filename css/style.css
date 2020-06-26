@@ -8,6 +8,60 @@ a:hover {
     text-decoration: none
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #222222;
+    line-height: 1.25;
+    font-weight: 700
+}
+
+h2, .h2 {
+    font-size: 26px
+}
+
+@media (min-width: 992px) {
+    h2, .h2 {
+        font-size: 36px
+    }
+}
+
+.button {
+    /* background: #F7971E;
+    background: -webkit-linear-gradient(to right, #FFD200, #F7971E);
+    background: linear-gradient(to right, #FFD200, #F7971E); */
+    background: #1e3c72;
+    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
+    background: linear-gradient(to right, #2a5298, #1e3c72);
+    border: 0;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 9px 30px;
+}
+
+.section-padding {
+    padding: 65px 0
+}
+
+@media (min-width: 992px) {
+    .section-padding {
+        padding: 85px 0
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-padding {
+        padding: 130px 0
+    }
+}
+
+.section-intro {
+    max-width: 570px;
+    margin-right: auto;
+    margin-left: auto
+}
+
 /* Header */
 
 .header-area {
@@ -27,20 +81,71 @@ a:hover {
     padding-bottom: 0;
 }
 
+/* Subscribe */
+
+.form-subscribe {
+    max-width: 610px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.form-subscribe .form-control {
+    border: 0;
+    border-radius: 0;
+    font-size: 15px;
+    height: 40px;
+    padding: 0 0 8px 0;
+    margin-right: 5px;
+    background: transparent;
+    color: #888888;
+    border-bottom: 1px solid #dbd9e6
+}
+
+@media (min-width: 600px) {
+    .form-subscribe .form-control {
+        margin-right: 40px
+    }
+}
+
+.form-subscribe .form-control::placeholder {
+    font-weight: 300;
+    color: #888888
+}
+
+.form-subscribe .form-control:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+.button-shadow2 {
+    box-shadow: 0px 20px 20px 0px rgba(42, 38, 172, 0.2)
+}
+
 /* Footer */
 
 .footer-area {
     padding: 50px 0 0 0;
-    background: #f8f8f8;
+    /* background: #f0f0f0; */
+    /* background: #1e3c72;
+    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
+    background: linear-gradient(to right, #2a5298, #1e3c72); */
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .footer-area .footer-widget p {
-    color: #555555;
+    color: #454545;
+    /* color: white; */
     line-height: 1.8em;
 }
 
 .footer-area .footer-widget h4 {
     font-weight: 700;
+    /* color: #454545; */
     color: #222222;
     font-size: 16px;
     margin-bottom: 20px;
@@ -56,16 +161,17 @@ a:hover {
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    color: #555555
+    color: #888888;
+    /* color: white; */
 }
 
 .footer-area .footer-widget ul li a:hover {
-    color: #aaaaaa
+    color: black;
 }
 
 .footer-area .footer-widget ul li a span {
-    font-weight: 600;
-    color: #f0c33e;
+    font-weight: 700;
+    color: #fdd551;
 }
 
 .offset-20 {
@@ -73,12 +179,13 @@ a:hover {
 }
 
 .footer-social a {
-    color: #222222;
+    color: #454545;
+    /* color: white; */
     display: inline-grid;
 }
 
 .footer-social a:hover {
-    color: #f0c33e;
+    color: #fdd551;
 }
 
 .footer-social a I {
@@ -95,5 +202,6 @@ a:hover {
 .footer-area .copyright p {
     font-weight: 400;
     color: #888888;
+    /* color: white; */
     font-size: 14px;
 }
