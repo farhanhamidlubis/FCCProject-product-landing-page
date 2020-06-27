@@ -41,19 +41,72 @@ h2, .h2 {
 }
 
 .section-padding {
-    padding: 65px 0
+    padding: 50px 0
 }
 
 @media (min-width: 992px) {
     .section-padding {
-        padding: 85px 0
+        padding: 50px 0
     }
 }
 
 @media (min-width: 1200px) {
     .section-padding {
-        padding: 130px 0
+        padding: 50px 0
     }
+}
+
+.pb-50px {
+    padding-bottom: 50px
+}
+
+@media (min-width: 992px) {
+    .pb-50px {
+        padding-bottom: 50px
+    }
+}
+
+.section-style {
+    width: 130px;
+    height: 11px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    margin-top: 15px
+}
+
+.section-style::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1e1859
+}
+
+.section-style::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #1e1859
+}
+
+.section-intro h1, .section-intro h2, .section-intro h3, .section-intro h4, .section-intro h5, .section-intro h6 {
+    color: #454545
+}
+
+.section-intro .section-style::before {
+    background-color: #222
+}
+
+.section-intro .section-style::after {
+    background-color: #222
 }
 
 .section-intro {
@@ -64,21 +117,210 @@ h2, .h2 {
 
 /* Header */
 
-.header-area {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
+/* Banner */
+
+/* Pricetable */
+
+.priceTable-wrapper {
+    padding-bottom: 30px;
 }
 
-.header-area .navbar {
+.card-pricing {
+    background: #f8f9fa;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: 0px 2px 2px 0px rgba(40, 25, 114, 0.1);
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s
+}
+
+.card-pricing__header {
+    border-bottom: 1px solid #ebebeb;
+    padding: 40px 7px
+}
+
+.card-pricing__header h4 {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #454545
+}
+
+.card-pricing__header p {
+    font-weight: 400;
+    margin-bottom: 27px
+}
+
+.card-pricing__price {
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin: 0;
+    color: #454545
+}
+
+@media (min-width: 991px) {
+    .card-pricing__price {
+        font-size: 60px
+    }
+}
+
+.card-pricing__price span {
+    font-size: 40px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 5px;
+    margin-right: 3px
+}
+
+.card-pricing__list {
+    padding: 30px 8px 25px 8px;
+    border-bottom: 1px solid #ebebeb
+}
+
+.card-pricing__list li {
+    margin-bottom: 12px
+}
+
+.card-pricing__list li:last-child {
+    margin-bottom: 0
+}
+
+.card-pricing__list li i, .card-pricing__list li span {
+    font-size: 13px;
+    margin-right: 10px
+}
+
+.card-pricing .button {
     background: transparent;
-    border: 0px;
-    border-radius: 0px;
-    width: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
+    border: 1px solid #dbd9e6;
+    color: #454545
+}
+
+.card-pricing__footer {
+    padding: 45px 0
+}
+
+.card-pricing:hover {
+    background: #fff;
+    box-shadow: 0px 20px 25.5px 4.5px rgba(33, 20, 106, 0.1)
+}
+
+.card-pricing:hover .card-pricing__price {
+    color: #222222
+}
+
+.card-pricing:hover .card-pricing__header h4, .card-pricing:hover p {
+    color: #222222
+}
+
+.card-pricing:hover .button {
+    color: #454545;
+    box-shadow: 0px 10px 20px 0px rgba(42, 38, 172, 0.1)
+}
+
+.card-pricing-featured {
+    background: #222;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: 0px 2px 2px 0px rgba(40, 25, 114, 0.1);
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s
+}
+
+.card-pricing__header-featured {
+    border-bottom: 1px solid #888888;
+    padding: 40px 7px;
+}
+
+.card-pricing__header-featured h4 {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #f8f9fa;
+}
+
+.card-pricing__header-featured p {
+    font-weight: 400;
+    margin-bottom: 27px;
+    color: #f0c33e;
+}
+
+.card-pricing__price-featured {
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin: 0;
+    color: #f8f9fa;
+}
+
+@media (min-width: 991px) {
+    .card-pricing__price-featured {
+        font-size: 60px
+    }
+}
+
+.card-pricing__price-featured span {
+    font-size: 40px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 5px;
+    margin-right: 3px
+}
+
+.card-pricing__list-featured {
+    padding: 30px 8px 25px 8px;
+    border-bottom: 1px solid #888888
+}
+
+.card-pricing__list-featured li {
+    margin-bottom: 12px;
+    color: #f8f9fa;
+}
+
+.card-pricing__list-featured li:last-child {
+    margin-bottom: 0
+}
+
+.card-pricing__list-featured li i, .card-pricing__list-featured li span {
+    font-size: 13px;
+    margin-right: 10px
+}
+
+.card-pricing-featured .button {
+    background: transparent;
+    border: 1px solid #dbd9e6;
+    color: #f8f9fa
+}
+
+.card-pricing__footer-featured {
+    padding: 45px 0
+}
+
+.card-pricing-featured:hover {
+    background: white;
+    box-shadow: 0px 20px 25.5px 4.5px rgba(33, 20, 106, 0.1)
+}
+
+.card-pricing-featured:hover .card-pricing__price-featured {
+    color: #222222
+}
+
+.card-pricing-featured:hover .card-pricing__header-featured h4, .card-pricing-featured:hover p {
+    color: #222222
+}
+
+.card-pricing-featured:hover .card-pricing__list-featured li {
+    color: #222222;
+}
+
+.card-pricing-featured:hover .button {
+    color: #454545;
+    box-shadow: 0px 10px 20px 0px rgba(42, 38, 172, 0.1)
 }
 
 /* Subscribe */
@@ -121,6 +363,12 @@ h2, .h2 {
     box-shadow: 0px 20px 20px 0px rgba(42, 38, 172, 0.2)
 }
 
+/* Profile Video */
+
+.video-section {
+    padding: 75px;
+}
+
 /* Footer */
 
 .footer-area {
@@ -128,13 +376,11 @@ h2, .h2 {
     /* background: #f0f0f0; */
     /* background: #1e3c72;
     background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
-    background: linear-gradient(to right, #2a5298, #1e3c72); */
+    background: linear-gradient(to right, #2a5298, #1e3c72); 
     background: #ECE9E6;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); */
+    background: #f8f9fa;
 }
 
 .footer-area .footer-widget p {
