@@ -22,9 +22,9 @@
 <body>
 
   <!--======================= HEADER ========================-->
-  <header class="" id="header">
+  <header class="fixed-top" id="header">
     <div class="">
-      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light" id="nav-bar">
+      <nav class="navbar navbar-expand-md navbar-light bg-light" id="nav-bar">
         <div class="container">
 
           <a class="navbar-brand" href="#">
@@ -52,7 +52,7 @@
     <!-- <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by fullvector -
         www.freepik.com</a> -->
 
-    <div class="">
+    <div class="hero-area">
       <div class="">
 
         <div class="d-flex align-items-center">
@@ -66,12 +66,12 @@
                   <!-- Slider btn -->
                   <div class="slider-btns">
                     <!-- Hero-btn -->
-                    <a href="industries.html" class="btn radius-btn">get started</a>
+                    <a href="#pricing" class="button button-shadow">Get Started</a>
                   </div>
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="d-none d-lg-block">
+                <div class="hero-img d-none d-lg-block">
                   <img src="img/banner-image.png" alt="banner image">
                 </div>
               </div>
@@ -85,39 +85,78 @@
 
 
   <!--====================== FEATURES =======================-->
-  <section class="mb-5" id="features">
+  <section class="section-margin mb-5 pt-xl-100" id="features">
     <div class="container">
+
+      <div class="section-intro pb-50px text-center">
+        <h2>Hight Quality Service</h2>
+        <div class="section-style"></div>
+      </div>
+
       <div class="row">
-
-        <div class="col-md-6 col-lg-4">
-          <div class="">
-            <div class="">
-              <img src="img/home/png/003-pencil.png" alt="">
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-service text-center">
+            <div class="service-icon">
+              <img src="img/006-server.png" alt="">
             </div>
-            <h3>Ease of Use</h3>
-            <p>Cloudyclouds Panel is extremely user-friendly and can be used by those with little experience in website
-              development</p>
+            <h3>SSD Cloud Hosting</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore. </p>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4">
-          <div class="">
-            <div class="">
-              <img src="img/home/png/004-home-page.png" alt="">
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-service text-center">
+            <div class="service-icon">
+              <img src="img/004-home-page.png" alt="">
             </div>
-            <h3>Powerful</h3>
-            <p>A wide variety of tools to satisfy advanced user and website developer needs.</p>
+            <h3>Free Domain Transfer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore. </p>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4">
-          <div class="">
-            <div class="">
-              <img src="img/home/png/005-headset.png" alt="">
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-service text-center">
+            <div class="service-icon">
+              <img src="img/007-server-1.png" alt="">
             </div>
-            <h3>Wordpress Optimized</h3>
-            <p>Get more speed, better SEO, visitor retention and conversions with our custom-built WP optimization stack
-              and LiteSpeed cache.</p>
+            <h3>Best Hosting Service</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore. </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-service text-center">
+            <div class="service-icon">
+              <img src="img/002-shield.png" alt="">
+            </div>
+            <h3>Strong Backup</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore. </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-service text-center">
+            <div class="service-icon">
+              <img src="img/008-mail.png" alt="">
+            </div>
+            <h3>Email Service</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore. </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-service text-center">
+            <div class="service-icon">
+              <img src="img/009-art.png" alt="">
+            </div>
+            <h3>Data Analysis</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore. </p>
           </div>
         </div>
 
@@ -130,6 +169,11 @@
   <!--=================== PROFILE VIDEO =====================-->
   <section class="video-section" id="how-to">
     <div class="container">
+
+      <div class="section-intro pb-50px text-center">
+        <h2>See How It Works</h2>
+        <div class="section-style"></div>
+      </div>
 
       <div class="embed-responsive embed-responsive-16by9">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/XZmGGAbHqa0" frameborder="0"
@@ -241,10 +285,9 @@
 
       <form class="form-subscribe" id="form" action="https://www.freecodecamp.com/email-submit">
         <div class="input-group align-items-center">
-          <input type="email" class="form-control" id="email" placeholder="Enter Your email" required>
+          <input name="email" type="email" class="form-control" id="email" placeholder="Enter Your email" required>
           <div class="input-group-append">
-            <button class="button button-shadow2" type="submit">Subscribe</button>
-            <!-- <input type="submit" id="submit" value="subscribe"> -->
+            <input type="submit" id="submit" value="Subscribe">
           </div>
         </div>
       </form>
